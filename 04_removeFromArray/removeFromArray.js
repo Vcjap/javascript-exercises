@@ -1,13 +1,15 @@
 const removeFromArray = function(incomingArray, ...valuesToRemove) {
-    console.log(valuesToRemove);
+    let removedValues = [] // array to store removed values
     for (const valueToRemove of valuesToRemove) {
-        for (const element of incomingArray) {
-            if (valueToRemove !== element) continue;
-            const indexValueToRemove = incomingArray.indexOf(element);
-            const removedValues = incomingArray.splice(indexValueToRemove,1);
+        while (incomingArray.indexOf(valueToRemove) != -1) {
+            removedValues = incomingArray.splice(incomingArray.indexOf(valueToRemove),1)
         }
+    //     for (const element of incomingArray) {
+    //         if (valueToRemove !== element) continue;
+    //         const indexValueToRemove = incomingArray.indexOf(element);
+    //         const removedValues = incomingArray.splice(indexValueToRemove,1);
+    //     }
     }
-    console.log(incomingArray);
     return incomingArray
 };
 
