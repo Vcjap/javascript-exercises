@@ -15,7 +15,7 @@
         color: #666;
       }
     </style>
-    <script src = "shopping-list.js"></script>
+    <script src = "shopping-list.js" defer></script>
   </head>
   <body>
 
@@ -24,12 +24,13 @@
     <div>
       <label for="item">Enter a new item:</label>
       <input type="text" name="item" id="item">
-      <button>Add item</button>
+      <button id="addItem">Add item</button>
     </div>
 
     <ul>
 
     </ul>
+    <button id="deleteAll">Delete all</button>
 
     <script>
 
