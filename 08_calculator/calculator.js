@@ -11,8 +11,9 @@ const sum = function(arr) {
   return finalSum;
 };
 
-const multiply = function() {
-
+const multiply = function(arr) {
+	let finalSum = arr.reduce((sum, item) => sum * item, 1);
+  return finalSum;
 };
 
 const power = function() {
