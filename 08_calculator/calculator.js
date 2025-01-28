@@ -21,8 +21,13 @@ const power = function(num, power) {
   return finalNum;
 };
 
-const factorial = function() {
-	
+const factorial = function(num) {
+	let arr = [];
+  for (i = 1; i <= num; i++) {
+    arr.push(i);
+  };
+  const fact = arr.reduce((sum, item) => sum * item, 1);
+  return fact;
 };
 
 // Do not edit below this line
